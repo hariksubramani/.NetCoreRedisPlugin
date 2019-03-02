@@ -27,7 +27,7 @@ namespace Pluggable_Redis_Library.Infrastructure
             
         //cache expiration time
         public int REDIS_HASHSET_EXPIRY_IN_MINUITES => Convert.ToInt32(_configuration.
-            GetSection("AppSettings:REDIS_HASHSET_EXPIRY_IN_MINUITES").Value);
+            GetSection("RedisSettings:REDIS_HASHSET_EXPIRY_IN_MINUITES").Value);
       
         #endregion
     }
